@@ -1,0 +1,171 @@
+body {
+    /*background: linear-gradient(120deg, #f57c00, #ff4081);*/
+    background-image: url(background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.431);
+  }
+
+  
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    
+    margin: 0 0 30px;
+    color: #efc14c;
+    text-align: center;
+    font-size:40px;
+    border: 2px solid #543d04;
+    background-color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 9.8);
+  }
+  
+  #task-form {
+    display: grid;
+    
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group input,
+  .form-group select {
+    background-color: #7a5408;
+    width: 97%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: #523004;
+    border: 2px solid #543d04;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 9.8);
+  }
+  
+  .form-group input::placeholder,
+  .form-group select::placeholder {
+    color: #999;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(118, 75, 162, 0.3);
+  }
+  
+  button[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e3a52a;
+    color: rgb(87, 58, 5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #543d04;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 9.8);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #a4710a;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(213, 227, 169);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item .task-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .task-item .task-info .task-priority {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .task-item .task-info .task-priority.high {
+    background-color: #2f1eed;
+    color: #ac7d07;
+  }
+  
+  .task-item .task-info .task-priority.medium {
+    background-color: #74c6e9;
+    color: #b19052;
+  }
+  
+  .task-item .task-info .task-priority.low {
+    background-color: #0eb7c3;
+    color: #b17316;
+  }
+  
+  .task-item .task-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .task-item .task-label {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .task-item .task-deadline {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: #bbb;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    color: #e53935;
+  }
+  
